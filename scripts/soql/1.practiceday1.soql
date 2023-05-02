@@ -1,0 +1,296 @@
+// Get all FirstName, LastName, Email Fields
+//of all Contact Records in your organization
+
+//SELECT  FirstName, LastName, Email 
+//FROM Contact
+
+
+// return LastName, Company fields
+// of all Lead Records in your organization
+// SELECT LastName, Company
+// FROM Lead
+
+// return Subject, Description, Status fields
+//SELECT Subject, Description, Status
+  //FROM Case
+  
+  // return Subject, ActivityDate, WhatId
+  //of all tasks Records in your organization
+  
+  //SELECT Subject, ActivityDate, WhatId
+  //FROM Task
+ 
+ // retuen lastName, AccountId fields
+ // of all Contact in your org
+ //SELECT lastName, Account.Name, Account.AnnualRevenue
+ //FROM Contact 
+ 
+ // get all contacts first name and last name 
+// if the first name is Sean 
+//SELECT FirstName, LastName
+//FROM Contact 
+//WHERE FirstName = 'Sean' 
+
+// get all the accounts name, AnnualRevenue
+// if AnnualRevenue is between 50000 and 1000000000
+// We can use AND to combine conditions that need to be true at the same time
+
+//SELECT Name, AnnualRevenue
+//FROM Account
+//WHERE AnnualRevenue>=50000 AND AnnualRevenue<=1000000
+
+// Use OR to return records that meet one of two conditions. 
+// get all the accounts name, AnnualRevenue
+// if AnnualRevenue is less than 5000 
+// or greater than 1000000
+
+// Get All Account Name field
+// if the Name is not 
+// Dickenson PLC
+// Edge Communications
+// AnnualRevenue is not null
+
+//SELECT Name, AnnualRevenue
+  //FROM Account
+  //WHERE (Name != 'Dickenson plc' AND Name != 'Edge Communications') AND AnnualRevenue != null
+
+
+// Get All Account Name , AnnualRevenue field
+// if the Name is in
+// Dickenson plc 
+// Edge Communications
+// United Oil & Gas Corp.
+//SOQL STRING ARE CASE INSENSITIVE 
+
+// Above query can be better using IN operator
+// Just like switch statement in Apex,
+// if we are checking multiple possible value for same variable|field
+// IN (val1, val2, val3,..)
+// Any result that match any of those options will be returned
+// Anything does not match will not return
+// in below example first 3 Name exists in records, last one does not => 3
+
+//SELECT  Name, AnnualRevenue
+//FROM Account
+//WHERE Name IN ('Dickenson plc', 'Edge Communications', 'United Oil & Gas Corp.', 'BLA BLA')
+
+// Get all Opportunity Name, Amount, StageName
+// if the StageName is IN Closed Won or Closed Lost 
+
+ //SELECT Name, Amount, StageName
+ //FROM Opportunity
+ //WHERE StageName IN ('Closed Won','Closed Lost')
+
+ // Now what if we want to only return if stageName is not 'Closed Won','Closed Lost'
+//SELECT Name, Amount, StageName
+ //FROM Opportunity
+ //WHERE StageName NOT IN ('Closed Won','Closed Lost')
+
+//SELECT Name, AnnualRevenue
+ //FROM Account
+ //WHERE Name NOT IN ('Dickenson plc', 'Edge Communications')
+ //AND AnnualRevenue != null 
+
+
+// Get All the Contact first names and the last names
+// Sort the result by firstName alphabetical order A-Z (ascending order)
+ //SELECT FirstName, LastName
+  //FROM Contact
+  //ORDER BY FirstName DESC NULLS LAST
+ // LIMIT 4
+
+ // Get all Opportunity Name, Amount, StageName  
+// Order by Amount Desc . Limit the result to 3 records
+
+//SELECT Name, Amount, StageName
+//FROM Opportunity
+//ORDER BY Amount DESC LIMIT 3
+
+//1. Write a SOQL SELECT statement to retrieve the Company ,Name, Email fields for all Lead records 
+//where the Status is Open - Not Contacted. 
+//Sort the result by Name
+
+//SELECT Company , Name , Email
+//FROM Lead
+//WHERE Status = 'Open - Not Contacted'
+//ORDER BY Name ASC
+
+
+//2. Write a SOQL SELECT statement to retrieve all records from the 
+//Lead object, including Name ,Salutation, Title, Company, Phone , State, Email 
+   //- Filter the result using below criteria 
+   //- State is not Null 
+
+   //SELECT Name , Salutation , Title , Company , Phone , State , Email
+   //FROM Lead
+   //WHERE State != Null
+
+   //3. Write a SOQL SELECT statement to retrieve all records from the Lead object, 
+   //including Name ,Country, Title, Company, Phone , State, Email 
+   //- Filter the result using below criteria 
+   //- State is FL or VA or MD 
+   //- or Country is France
+
+   //SELECT Name , Country , Title , Company , Phone , State , Email
+   //FROM Lead
+   //WHERE State IN ('FL' ,  'VA' ,  'MD')
+   //OR Country = 'France'
+
+//4. Write a SOQL SELECT statement to retrieve all records from the Lead object, 
+//including Name ,LeadSource, Title, Company
+  // - Filter the result one by one using below criteria 
+  // - Title is CFO or CEO 
+  // - AND LeadSource is Web 
+
+  //SELECT Name , LeadSource , Title , Company
+  //FROM Lead
+  //WHERE Title IN ('CFO' , 'CEO')
+  //AND LeadSource = 'Web'
+
+
+ //5. Write a SOQL SELECT statement to retrieve all records from the Lead object, 
+ //including Name ,Fax, Title, Company
+   //- Filter the result using below criteria 
+   //- Fax is not NULL
+
+//SELECT Name , Fax , Title , Company
+//FROM Lead
+//WHERE Fax != NULL
+
+//6. Write a SOQL SELECT statement to retrieve all records from the Lead object, 
+//including Name ,State, Title, Company
+   //- Filter the result using below criteria 
+   //- Title is not NULL
+   //- State is NULL
+
+   //SELECT Name , State , Title , Company
+   //FROM Lead
+   //WHERE Title != NULL
+   //AND State = NULL
+
+//7. Write a SOQL SELECT statement to retrieve the Name,AnnualRevenue 
+//and Industry fields for all **Account** records 
+   //- where the Industry is Finance.
+   //- sort the result by AnnualRevenue descending
+   //- Limit the result to 2 
+
+  // SELECT Name , AnnualRevenue , Industry
+   //FROM Account
+   //WHERE Industry = 'Finance'
+   //ORDER BY AnnualRevenue DESC 
+   //LIMIT 2
+
+//8. Write a SOQL SELECT statement to retrieve the Name,ProductCode 
+//and CreatedDate fields for all **Product2** records 
+   //- Order the Result by ProductCode
+
+ //SELECT  Name , ProductCode , CreatedDate
+ //FROM Product2
+ //ORDER BY ProductCode   
+
+
+//9. Write a SOQL SELECT statement to retrieve the Name,Rating,AnnualRevenue 
+//and Industry fields for all **Account** records 
+   //- where the Rating is either Hot or Warm.
+   //- sort the result by CreatedDate Descending order
+
+//SELECT Name ,Rating , AnnualRevenue , Industry
+//FROM Account
+//WHERE Rating IN ('Hot' , 'Warm')
+//ORDER BY CreatedDate DESC
+
+//10. Write a SOQL SELECT statement to retrieve all records from the Lead object, 
+//including Name ,LeadSource, Title, Company
+   //- Filter the result using below criteria 
+   //- AND LeadSource is not one of these
+     //- Web
+     //- Purchase List
+     //- Event
+     //- Phone Inquiry 
+
+     SELECT Name , LeadSource , Title , Company
+     FROM Lead
+     WHERE LeadSource NOT IN ( 'Web' , 'Purchase List' , 'Event' , 'Phone Inquiry')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
