@@ -1,5 +1,5 @@
 /**
-We can create a Set by copying the content of another set of list
+    We can create a Set by copying the content of another set or list
  */
 
 Set<String> strSet1 = new Set<String>{'item1','item2','item3','item4','item5'};
@@ -22,3 +22,6 @@ System.debug('numberList value is : ' + numberList);
 Set<Integer> numberSet = new Set<Integer>(numberList);
 System.debug('numberSet value is : ' + numberSet); 
 //numberSet value is : {10, 20}
+
+
+

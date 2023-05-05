@@ -33,7 +33,6 @@ now you have access to latest changes you made under Object manager
  v1.Contact__c =  con.Id ; 
  // insert this contact 
  insert v1 ; 
- System.debug('v1 value is : ' + v1);
-
-System.debug('v1 value is : ' + v1); 
-
+ System.debug('v1 value is : ' + v1); 
+ 
+ System.debug('v1.Name value is : ' + v1.Name); 

@@ -21,11 +21,14 @@
     "Nespresso",
     "Opps",
     "overriden",
+    "Queueable",
     "Rollable",
     "Schedulable",
+    "SFDX",
     "SOBJECT",
     "SOQL",
     "stylee",
-    "undelete"
+    "undelete",
+    "upsert"
   ]
 }

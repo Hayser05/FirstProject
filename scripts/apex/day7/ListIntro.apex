@@ -2,7 +2,7 @@
 Collection : for storing more than one values 
 There are 3 types of collection 
 
-List : ordered collection to store multiple values of same type 
+List : ordered collection to store multiple values of same type , allow duplicate
 Set  : unordered collection to store multiple unique values of same type removing
 Map  : store key value pair in each element (more on that later)
  */
@@ -18,9 +18,9 @@ List<String> studentNames = new List<String>() ;
 
 // we can use yourListVariable.add(what You want to add here) ; 
 // to add elements into the List 
-studentNames.add('Nurzat'); 
+studentNames.add('Nurzat') ; 
 studentNames.add('Ali') ; 
-studentNames.add('Esra'); 
+studentNames.add('Esra') ; 
 
 System.debug(studentNames) ; 
 
@@ -53,9 +53,3 @@ prices.add(29.87) ;
 prices.add(11000.54) ; 
 
 System.debug(prices) ; 
-
-
-
-
-
-

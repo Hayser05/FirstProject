@@ -43,3 +43,8 @@ for(String eachWord : strList) {
 }
 
 System.debug('frequencyMap value is : ' + frequencyMap); 
+  
+
+// Homework : inspired by above 
+// Given a long string 
+// find out frequency of each Character 

@@ -1,3 +1,4 @@
+
 /**
 
 Declare and initialize variable muffin
@@ -9,15 +10,17 @@ Countdown from 20 -> 0  decrease by 2
     // print out muffin count is XX, I am getting full 
 */
 
-
 Integer muffin = 20 ; 
+
 // while( muffin >= 0 ){
 
-// if(muffin > 10){
-// System.debug('muffin count is ' + muffin) ; 
-//  }else{       System.debug('muffin count is '+ muffin + ' I am getting full') ;     
- 
-//  }
+//     if(muffin > 10){
+//         System.debug('muffin count is ' + muffin) ; 
+//     }else{
+//         System.debug('muffin count is ' 
+//                         + muffin + ' I am getting full') ; 
+//     }
+
 //     muffin -= 2 ; // muffin = muffin -2 ; 
 // }
 
@@ -32,18 +35,18 @@ Countdown from 20 -> 0
     // print out second half : muffin count is XX
     // decrease the muffin by 2 
 */
-
 // while(muffin >= 0){
 
-//     if(muffin > 10){
-//         System.debug('first half : muffin count is ' + muffin);
-//         muffin -= 3 ; 
-//     }else{
-//         System.debug('second half : muffin count is ' + muffin);
-//         muffin -= 2 ; 
-//     }
+    // if(muffin > 10){
+    //     System.debug('first half : muffin count is ' + muffin);
+    //     muffin -= 3 ; 
+    // }else{
+    //     System.debug('second half : muffin count is ' + muffin);
+    //     muffin -= 2 ; 
+    // }
 
 // }
+
 
 do {
 
@@ -56,15 +59,3 @@ do {
     }
 
 }while(muffin >= 0) ; 
-
-// FOR LOOP SYNTAX
-
-//Initialization : 
-// this is where variable is declared and initial value is given , IT WILL ONLY RUN ONCE WHEN THE LOOP START.
- 
-// Loop condition : 
-// this is where we put condition for the loop, as long as it's true the loop continue. 
-
-// Increment|decrement : 
-// this is where we increment or decrement the value so we can change the condition and eventually get out of the loop , 
-// IMPORTANTLY , It run after each iteration.

@@ -10,14 +10,9 @@ for each loop
  
  While(condition) {
     //run this block of code
-}+
-+
-
-
-
-
-
+}
 */
+
 Integer count = 1 ; 
 // print out the count by incrementing the value by 1
 // until you reach number 5
@@ -47,7 +42,7 @@ while( level < 15){
 
 System.debug('--------------') ; 
 
-// count from 10 - 1 
+// coutn from 10 - 1 
 Integer cupcakeCount = 10 ; 
 
 while(cupcakeCount > 0){
@@ -59,7 +54,7 @@ while(cupcakeCount > 0){
 
 System.debug('----------') ; 
 // start from 15 , countdown 
-// by decreasing by 3 each time
+// by decreacing by 3 each time
 // 15, 12, 9, 6, 3, 0
 Integer candy = 15 ; 
 
@@ -78,3 +73,5 @@ while( candy >= 0  ){
 // System.debug(count++);  // 4
 // System.debug(count++);  // 5
                         // 6 
+
+

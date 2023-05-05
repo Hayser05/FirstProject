@@ -1,3 +1,4 @@
+
 Schedulable s = new ScheduledTaskCleanUp(); 
 
 // crone expression is used to 
@@ -7,9 +8,6 @@ Schedulable s = new ScheduledTaskCleanUp();
 // anything you do not want to fill up 
 // use ? mark 
 // String crex = '0 1 12 28 4 ?' ; 
-//https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_scheduler.htm#using_system_schedule
-
-//Seconds Minutes Hours Day_of_month Month Day_of_week Optional_year
 
 // 0 0 13 * * ?    Class runs every day at 1 PM.
 // 0 5 * * * ?    Class runs every hour at 5 minutes past the hour.

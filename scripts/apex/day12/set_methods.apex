@@ -44,18 +44,21 @@ System.debug('numberSet.contains(15)  value is : ' + numberSet.contains(15) ); /
  //OUTPUT : numberSet.contains(15)  value is : false
 
 // remove(valueToDelete)
+// UNLIKE LIST , IT EXPECTS A VALUE NOT INDEX 
  numberSet.remove(30); 
  System.debug('numberSet value is : ' + numberSet); 
   //OUTPUT : numberSet value is : {10, 20}
 
-// you can not loop through set using for loop
-//because there is no index
-//UNLIKE LIST, IT EXPECTS A VALUE NOT INDEX
-// Code snippet : ForEach
-// update the collection name
-// hit tab to select data type if needed
-  
-  for(Integer each : numberSet){
-    System.debug('Current value: ' + each);
+
+ //  YOU CAN NOT LOOP THROUGH SET USING FOR LOOP 
+ // BECAUSE THERE IS NO INDEX 
+ // Code snippet :  ForEach
+ //  update the collection name
+ //  hit tab to select data type if needed 
+
+  for(Integer each : numberSet) {
+    System.debug('Current value : ' + each);
   }
-   //OUTPUT : numberSet value is : {10, 20}
+
+
+  

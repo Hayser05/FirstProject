@@ -18,12 +18,11 @@ System.debug('message.length() value is : ' + message.length() );
 
 System.debug('String.isEmpty(message) value is : ' + String.isEmpty(message)  ); 
 
-String msg1 = '  ' ; 
+String msg1 = '    ' ; 
 System.debug('String.isEmpty(msg1) value is : ' + String.isEmpty(msg1)  ); 
 
 // isBlank method : Returns true if the specified String is white space, empty (''), or null; otherwise, returns false.
 System.debug('String.isBlank(msg1) value is : ' + String.isBlank(msg1)  ); 
-
 
 
 // toUpperCase()   return the UPPERCASE version of the text 
@@ -53,16 +52,14 @@ switch on season.toUpperCase()  {
 }
 
 
+//--------------Checking for String contains some substring 
+/**
+contains(substring)
+Returns true if and only if the String that called the method contains the specified sequence of characters in substring.
 
+Example :   
+'abcd' contains 'ab'  true  
+'abcd' contains 'ac'  false   
+ */
 
-
-
-
-
-
-
-
-
-
-
-
+ System.debug('message.contains(\'Hello\')  value is : ' + message.contains('Hello') ); 

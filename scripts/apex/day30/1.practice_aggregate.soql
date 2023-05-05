@@ -1,3 +1,4 @@
+
 // 1. Get the Name, StageName of Opportunity isClosed (closed won | lost)
 // 2. Get the count of Opportunity for each isClosed (TRUE | FALSE) value 
 // 3. Get the count, Sum of all Amount for Opportunity each isWon (TRUE | FALSE) value
@@ -23,13 +24,3 @@
 SELECT COUNT(ID)
 FROM CASE 
 WHERE IsClosed = TRUE
-
-
-
-
-
-
-
-
-
-

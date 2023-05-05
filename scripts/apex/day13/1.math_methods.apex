@@ -22,7 +22,7 @@ System.debug('remainder value is : ' + remainder);
 
 /**
 Odd or Even in Math 
-Odd number is number that will have remainder of 1 when divided by 2  v
+Odd number is number that will have remainder of 1 when divided by 2 
 Even number is number that will have remainder of 0 when divided by 2 
  */
 Integer score = 5 ;
@@ -32,8 +32,7 @@ Boolean isEven =  Math.mod(score , 2) == 0 ;
 System.debug('isEven value is : ' + isEven); 
 
 // print odd number if score is odd , and print even number if its even 
-if( isEven == true ){ // boolean always by defaults will give true inside the if statement 
-// i can say if(isEven)
+if( isEven ==true ){
     System.debug('Even number'); 
 }else{
      System.debug('Odd number'); 
@@ -56,24 +55,31 @@ System.debug('which number is bigger : '   +  Math.max(111, 99)  );
 System.debug('which number is smaller : '   +  Math.min(111, 99)  ); 
 //which number is smaller : 99
 
+// example of one way to convert Double into Integer(there is other way)
+Double price = 15.5 ;
+Integer priceWholeNumber =  price.intValue();  // 15
+System.debug('priceWholeNumber value is : ' + priceWholeNumber); 
 
 // Math.random() ==> 
 // Returns a positive Double that is greater than or equal to 0.0 and less than 1.0.
+// if you want to get the number from 0.0 - 10.0 instead 
+//   -> simply multiply by 10  ===>  
+// if you want to get the number from 50.0 - 60.0 instead 
+//   -> simply multiply by 10 and + 50 ===>  
+// if you want to get the number from 0.0 - 100.0 instead 
+//   -> simply multiply by 100  ===> 
+// if you want to get the number from 0.0 - 1000.0 instead 
+//   -> simply multiply by 1000  ===>  
+// if you want to get the number from 300.0 - 1300.0 instead 
+//   -> simply multiply by 1000  + 300 ===> 
 
-Double randomDbl =  Math.random() * 100 ; 
+
+Double randomDbl =  Math.random() * 100  ; 
 System.debug('randomDbl value is : ' + randomDbl); 
+// System.debug('randomDbl value is : ' + randomDbl * 100    ); 
 
-//System.debug('randomDbl value is : ' + randomDbl * 100  ); 
-
-
-Integer randomInteger = randomDbl.intValue();
+Integer randomInteger =   randomDbl.intValue() ; 
 System.debug('randomInteger value is : ' + randomInteger); 
-
-
-
-
-
-
 
 
 

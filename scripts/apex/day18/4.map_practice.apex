@@ -73,29 +73,6 @@ for(String eachKey : allKeys) {
 // System.debug('Value of this key ' +  priceMap.get('Strawberry') ) ; 
 // System.debug('------------------');
 
-// values() method , return all the values in List<YourValueDataType>
-List<Decimal> priceList = priceMap.values() ; 
-System.debug('priceList value is : ' + priceList); 
-
-System.debug('priceMap value is : ' + priceMap);
-
-// check if this map contains Mango , if not then add Mango => 6.99
-if(! priceMap.containsKey('Mango')   ){
-    priceMap.put('Mango', 6.99); 
-}
-
-System.debug('priceMap value is : ' + priceMap); 
-
-// if Banana price is greater than 2 ==> update it to 1.99
-if(  priceMap.get('Banana') > 2   ){
-     priceMap.put('Banana', 1.99) ; 
-}
-System.debug('priceMap value is : ' + priceMap); 
-
-
-// keySet() method , return all the keys in Set<YourKeyDataType>
-Set<String> allKeys =  priceMap.keySet() ;
-System.debug('allKeys value is : ' + allKeys); 
 
 // values() method , return all the values in List<YourValueDataType>
 List<Decimal> priceList = priceMap.values() ; 

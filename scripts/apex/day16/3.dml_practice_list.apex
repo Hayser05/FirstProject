@@ -1,5 +1,4 @@
 /**
-/**
  DML Practice
 
 Create List of Account 
@@ -29,15 +28,16 @@ update using the list in one shot
 //      // create account instance
 //      Account a = new Account(); 
 //      a.Name = 'Apex Acc ' + i ; 
+        
 //      // add that to the list 
 //      accList.add(a) ; 
     
 //  }
 
  for(Integer i=1; i<=5 ;i++) {
-     // add that to the list 
+     // add account with incrementing name to List 5 times 
      accList.add(  new Account(Name = 'Apex Acc '+i )   ) ; 
-    
+     
  }
 
  System.debug('accList value BEFORE is : ' + accList); 
@@ -69,6 +69,7 @@ for(Account each : accList) {
         vipAccountList.add( each ); 
     }
 }
+
 System.debug('------------------');
 System.debug('vipAccountList value is : ' + vipAccountList); 
 
@@ -77,6 +78,5 @@ update vipAccountList ;
 
 // delete them all 
 delete accList ; 
-// restore them all
-undelete accList;
-
+// restore them all 
+undelete accList ; 

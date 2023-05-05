@@ -19,8 +19,10 @@ b1.withdraw(200000);
 System.debug('b1.getBalance() value is : ' 
                 + b1.getBalance());
 //b1.getBalance() value is : 305000.0
-b1.withdraw(500000);
-//CAN NOT WITHDRAW THE MONEY YOU DONT HAVE
+b1.withdraw(500000) ;
+// CAN NOT WITHDRAW THE MONEY YOU DONT HAVE  
+
+System.debug('------------------');
 
 BankAccount b2 = new BankAccount(); 
 b2.setupAccount('Christina',987654321, 1000000); 
@@ -38,5 +40,7 @@ System.debug('b2.getBalance() value is : '
 b2.withdraw(3000000) ; 
 // CAN NOT WITHDRAW THE MONEY YOU DONT HAVE 
 
-
-
+b2.changeName('Cristina 2.0');
+b2.showDetails(); 
+//Account Holder name: Christina 2.0, Number : 987654321, Balance : 1500000
+// test

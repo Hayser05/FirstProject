@@ -31,8 +31,7 @@ System.debug('studentMap.size() value is : ' + studentMap.size() );
 
 
 // Get the value according to the key 
-//Returns the value to which the specified key is mapped, 
-//or null if the map contains no value for this key.
+//Returns the value to which the specified key is mapped, or null if the map contains no value for this key.
 // using  get(keyGoesHere) return => value 
 
 System.debug('studentMap.get(\'Ali\') value is : ' 

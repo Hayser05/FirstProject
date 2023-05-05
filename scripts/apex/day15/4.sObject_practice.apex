@@ -1,19 +1,18 @@
-
- /**
+/**
 
  */
 // Create a Contact variable and initializing it's value
  Contact c1 = new Contact(); 
  // assigning the field values
- c1.FirstName = 'Hyder' ; 
- c1.LastName  = 'Ayser' ; 
- c1.Email     = 'HA@force.com'; 
+ c1.FirstName = 'Zeynep' ; 
+ c1.LastName  = 'Y' ; 
+ c1.Email     = 'zeynep@force.com'; 
 // printing 
  System.debug('c1 value is : ' + c1); 
 
 // or you can directly provide field value inside ()
 // while assigning the value to the variable 
- Contact c2 = new Contact(FirstName='Ali', LastName='Sadeq');
+ Contact c2 = new Contact(FirstName='Gulya', LastName='K');
  System.debug('c2 value is : ' + c2);  
 
 
@@ -22,7 +21,7 @@
  // store above 2 Contact instances into the list 
  contacts.add( c1 ); 
  contacts.add( c2 ); 
- contacts.add(  new Contact(FirstName='Nano', LastName='T')   ) ; 
+ contacts.add(  new Contact(FirstName='Natalya', LastName='T')   ) ; 
 
 //  System.debug('contacts value is : ' + contacts); 
  System.debug('------------------');
@@ -38,17 +37,11 @@
 System.debug('firstContactFirstName value is : ' + firstContactFirstName); 
 
  // Print out the second item in the List (either with list syntax or array)
- String secondContactFirstName = contacts[1].FirstName;
- System.debug('second value is : ' + secondContactFirstName); 
 
 
- // Print out the second item last name in the List (either with list syntax or array) 
- String secondContactlastName = contacts[1].LastName;
-  System.debug('second value is : ' + secondContactLastName); 
+ // Print out the second item last name in the List (either with list syntax or array)
  
 
-//insert contacts;
+ // Loop through each item and print them out 
 
-
-
-
+ insert contacts; 

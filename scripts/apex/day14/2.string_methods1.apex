@@ -2,44 +2,16 @@
 # String methods: 
 
 ## equals(stringOrId)
-Returns true if the passed-in object is not null and represents the same binary sequence of characters as the current string. 
-Use this method to compare a string to an object that represents a string or an ID.
+Returns true if the passed-in object is not null and represents the same binary sequence of characters as the current string. Use this method to compare a string to an object that represents a string or an ID.
 
 ## equalsIgnoreCase(secondString)
-Returns true if the secondString isn’t null and represents the same sequence of characters as the String that called the method, 
-ignoring case.
+Returns true if the secondString isn’t null and represents the same sequence of characters as the String that called the method, ignoring case.
 
-## reverse()
-Returns a String with all the characters reversed.
 
-## indexOf(substring)
-Returns the index of the first occurrence of the specified substring. If the substring does not occur, this method returns -1.
 
-## indexOf(substring, index)
-Returns the zero-based index of the first occurrence of the specified substring from the point of the given index. 
-If the substring does not occur, this method returns -1.
-
-## indexOfIgnoreCase(substring)
-Returns the zero-based index of the first occurrence of the specified substring without regard to case. 
-If the substring does not occur, this method returns -1.
-
-## left(length)
-Returns the leftmost characters of the current String of the specified length.
-
-## right(length)
-Returns the rightmost characters of the current String of the specified length.
-
-## mid(startIndex, length)
-Returns a new String that begins with the character at the specified zero-based 
-startIndex with the number of characters specified by length.
-
-## split(regExp)
-Returns a list that contains each substring of the String that is terminated by 
-either the regular expression regExp or the end of the String.
 
  */
 
-/**
 /**
  ## reverse()
     Returns a String with all the characters reversed.
@@ -65,7 +37,11 @@ either the regular expression regExp or the end of the String.
      System.debug('NOT Palindrome!!!!'); 
  }
 
- /**
+//  word =  word.toUpperCase(); 
+//  System.debug('word value is : ' + word); 
+ 
+
+/**
 ## indexOf(substring)
 Returns the index of the first occurrence of the specified substring. If the substring does not occur, this method returns -1   .
  */
@@ -79,34 +55,35 @@ System.debug('str1.indexOf(\'worX\') value is : ' + str1.indexOf('worX'));
 
 /**
 ## indexOf(substring, index)
-Returns the zero-based index of the first occurrence of the specified substring from the point of the given index. 
-If the substring does not occur, this method returns -1.
+Returns the zero-based index of the first occurrence of the specified substring from the point of the given index. If the substring does not occur, this method returns -1.
  */
-// //    index    012345678910
-//               'Hello world' ; 
+// //    index    0 1 2 3 4 5 6 7 8 9 10
+//                H e l l o   w o r l d ; 
 System.debug('str1.indexOf(\'o\', 5) value is : ' 
                                 + str1.indexOf('o', 5) ); 
 
 System.debug('str1.indexOf(\'o\', 9) value is : ' 
                                 + str1.indexOf('o', 9) ); 
 
-
-
 /**
-## left(length)
+## left(length) , length here means how many do you need 
 Returns the leftmost characters of the current String of the specified length.
 */
 String str2 = 'abcdefg'; 
 System.debug('str2 value is : ' + str2); 
 
+System.debug('First character :' + str2.left(1) ); 
+System.debug('First 3 characters :' + str2.left(3) ); 
+// if we go out of range, it just return the whole string without error
+// System.debug('str2.left(300) value is : ' + str2.left(300) ); 
+
 /**
 ## right(length)
 Returns the rightmost characters of the current String of the specified length.
 */
-System.debug('last character value is : ' + str2.right(1) ); 
+System.debug('last character value is : '    + str2.right(1) ); 
 System.debug('last 2 characters value is : ' + str2.right(2) ); 
 System.debug('last 3 characters value is : ' + str2.right(3) ); 
-
 
 /**
 ## mid(startIndex, length)
@@ -146,9 +123,5 @@ System.debug('index of second character from the last : '
 
 // mid(startingIndex, characterCountYouWant) ; 
 String secondFromLastChar =  str2.mid( str2.length()-2 ,  1 ); 
-System.debug('secondFromLastChar value is : ' + secondFromLastChar);
-
-
-
-
-
+System.debug('secondFromLastChar value is : ' + secondFromLastChar); 
+                                 

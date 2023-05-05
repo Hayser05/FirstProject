@@ -19,4 +19,3 @@ Order.taxRate = 0.4;
 Order.showTaxRate();
 o1.printOrder();
 o2.printOrder();
-

@@ -1,115 +1,247 @@
-// data type should always start with uppercase
-// variable name should always start with lowercase
-// if you have more than one word use camelCase
-String studentName = 'Okan';
-Integer studentAge = 35;
-String studentState = 'CA';
-Boolean attendClass = true;
-Decimal studentHeight = 5.10;
-
-System.debug('My Name is ' + studentName + '.');
-System.debug('I am ' + studentAge + ' years old.');
-System.debug('I live in ' + studentState + ' State.');
+String studentName 		= 'Okan' ;
+Integer studentAge 		= 35 ; 
+String studentState 	= 'CA';
+Boolean attendClass 	= true ;  
+Decimal studentHeight 	= 5.10 ; 
+/*
+System.debug('My Name is ' +  studentName  + '.'  );
+System.debug('I am ' +  studentAge + ' years old.'   );
+System.debug('I live in ' + studentState + ' State.' );
 System.debug('I attend class daily ' + attendClass);
 System.debug('I am ' + studentHeight + ' feet tall');
-
-// Create multiple variable with same type in one line
-/*
-Integer num1 = 10 ; 
-Integer num2 = 20 ; 
-Integer num3 = 30 ; 
 */
-// it can be done easily as below
-Integer num1 = 10, num2 = 20, num3 = 30;
+System.debug('My Name is ' +   studentName  
+             + '. I am ' +  studentAge + ' years old.' 
+             + 'I live in ' + studentState + ' State.'
+             + 'I attend class daily ' + attendClass
+             + 'I am ' + studentHeight + ' feet tall' );
 
-// Relational Operators   > , >= , < , <= , == , != <>
-// it take two items and return true or false result
 
-// Check if num1 is greater than num2 and return the result into a variable
-Boolean isNum1GreaterThanNum2 = num1 > num2; //false
+// Assignment Operator = 
+// Compound assignment operator += , -=, *= , /=
+// Increment and Decrement Operator  ++  --
 
-System.debug('Is Num1 Greater Than Num2 : ' + isNum1GreaterThanNum2);
+// Relational (Comparision) Operators  >, >=, <, <=, == , != , <>
+// compare two items and return Boolean result (true|false)
 
-Boolean isNum2LessThanNum3 = num2 < num3; //true
+// Logical Operators  && (AND)  || (OR)   !(NOT)
 
-System.debug('Is Num2 Less Than Num3 : ' + isNum2LessThanNum3);
 
-// Compare num1 is greater than or equals num3 and directly print out the result
-// in this format : Is Num1 Greater Than Num3 : falseOrTrue
+// Shortcut for declaring and assigining multiple variables of same type 
+Integer num1 = 100, num2= 200, num3= 300 ; 
 
-// use parenthesis to see (num1 >= num3) as one then concatenate
-System.debug('Is Num1 Greater Than Or Equals Num3 : ' + (num1 >= num3));
+Decimal price1 = 699.99 , price2 = 799.99 ,  price3 = 1100.99 ; 
 
-// == checking for equality of 2 items , = is assignment operator
+// print out the result of price1 is greater than price3 
 
-// check if num3 value is 30 or not
+System.debug('Is price1 is greater than price3 : '  + (price1 > price3)    );
 
-System.debug('Is num3 and num2 equal? : ' + (num3 == num2));
 
-// checking for Inequality of 2 items  <>   !=
+// store the result of price1 greater than price2 AND price2 less than price3
+// into a Boolean variable and print it out 
 
-System.debug('Is num1 not equal to num2 : ' + (num1 != num2));
-System.debug('Is num1 not equal to num2 : ' + (num1 <> num2));
+Boolean result1 = (price1 > price2)  &&  (price2< price3) ;
+System.debug('Result of price1 greater than price2 ' 
+             +  ' AND price2 less than price3: '
+             + 	result1);
 
-String language = 'Apex';
-// == on string equality check is case insensitive
-System.debug('Is the language Apex or not :  ' + (language == 'aPeX'));
+// Increament and Decreament operators to increase|decrease the value by one 
 
-// Logical Operators :  AND ( && )  OR ( || )   NOT ( ! )
+// ++ used in the beginning of the variable is called pre-increment  ++score
+// ++ used in the end of the variable is called post-increment  score++
+// -- used in the beginning of the variable is called pre-decrement  --score
+// -- used in the end of the variable is called post-decrement  score--
 
-Integer num4 = 40, num5 = 50, num6 = 60;
+Integer count = 10 ; 
 
-/// is num4 more than 20 and less than 45
-// store the result into a boolean variable and print it out
+System.debug('value of count ' + count );  //10 
 
-Boolean isNum4Between20And45 = (num4 > 20) && (num4 < 45); //true
-System.debug('is ' + num4 + ' Between 20 And 45 : ' + isNum4Between20And45); //true
+System.debug('value of ++count : '+         ++count );  // 11
+System.debug('value of --count : '+         --count );  // 10 
 
-// Check if num5 is greater than 100 or less than 20 ;
-Boolean isNum5GreaterThan100OrLessThan20 = (num5 > 100) || (num5 < 20); //false
-System.debug(
-  'is num5 is greater than 100 or less than 20 ' + isNum5GreaterThan100OrLessThan20
-);
 
-System.debug(isNum4Between20And45); //true
-// Logical NOT(!) can be used on any boolean variable or anything that return boolean
-// and return opposite value,  true==> false and false==> true
-System.debug(!isNum4Between20And45); //false
+System.debug('value of count++ : '+         count++ );  // 10  
+System.debug('the current value of count '+  count );   // 11
 
-System.debug(!true); // false
-System.debug(!false); // true
+System.debug('value of count-- : '+        count--  ); // 11 right now Next time 10
+System.debug('the current value of count '+  count );   // 10 
+ 
+// current value of count is 10
+System.debug(count++     +'-------'+   count );  //10 -------- 11
+// current value of count is 11
+System.debug(count--     +'-------'+   count);   //11 ---------- 10 
 
-// ------Compound Assignment Operator. : += -= *= /=
+// current value of count is 10
+System.debug(++count     +'-------'+   count);  //11 ---11
+// current value of count is 11
+System.debug(--count     +'-------'+   count);  //10----10
 
-Integer score = 100;
 
-// increase the value of the score by 5
+// Conditional statements : 
+//conditionally execute part of the code 
 
-//score = score + 5 ;  // 105
-score += 5; // 105
-System.debug('increase the value of the score by 5 ' + score);
+Integer examScore = 57 ; 
 
-// decrease the value of the score by 55
+// if exam score is more than 66 
+// show debug message passed
 
-//score = score - 55 ; // 50
-score -= 55; // 50
-System.debug('decrease the value of the score by 55 ' + score);
+/*  if statement without else. 
+if( examScore > 66 ){
+    System.debug('Passed');
+}
+*/
 
-// double the value of score (multiply by 2 )
+// if exam score is more than 66 
+// show debug message passed , and another message congrats
+//otherwise show failed , and try again later
 
-// score = score * 2 ; // 100
-score *= 2; // 100
-System.debug('double the value of score ' + score);
 
-// divide the current value of score by 4 and reassign
-//   score = score / 4 ; //25
-score /= 4; // 25 ;
-System.debug('divide the current value of score by 4 ' + score);
+if( examScore > 66 ){
+    System.debug('Passed');
+    System.debug('Congrats');
+}else {
+ 	System.debug('Failed');
+    System.debug('Try again Later');
+}
 
-// using += for String
-String myName = 'Jon';
-//myName = myName + ' Snow';
-myName += ' Snow'; // Jon Snow
-myName += ' of Winterfell';
-// Jon Snow of Winterfell
-System.debug('Name: ' + myName);
+// Create a String variable to store studentName 
+// give a value 
+// if the value equal Fady , print clockmaster 
+// else print No Break
+String studentName = 'Osman' ; 
+
+if(studentName == 'Fady'){
+	System.debug('clockmaster, Break Time!!');
+}else{
+	System.debug('No Break ');
+}
+
+
+// Create a variables : 
+// annualRevenue as Integer and initialize it's value 
+// rating as String 
+
+/* If the annualRevenue greater than 100000 
+  assign the value of rating to hot 
+  otherwise assign the value of rating to cold 
+  print out the rating variable outside your if statement 
+*/	
+
+//Integer annualRevenue = 500 ;
+//String rating ; 
+//{ } this is called curly braces
+/**
+if(annualRevenue > 100000 ){
+    rating = 'hot' ; 
+}else{
+    rating = 'cold' ; 
+}
+System.debug('Rating is ' + rating);
+**/ 
+
+// Ternary operator can be used to
+// conditionally assign the value of a variable 
+// DataType yourVariableName =  (condition) ? TrueValue : FasleValue; 
+   
+Integer annualRevenue = 500000000 ; 
+String rating = (annualRevenue > 100000) ? 'hot' : 'cold' ; 
+System.debug('Rating is ' + rating);
+
+
+// declare and initiaze a variable called score1 
+// declare a String variable called examResult 
+// assign the value of examResult according to the score1 > 66 or not
+Integer score1 = 67 ; 
+String examResult = (score1>66) ? 'PASS' : 'FAIL'  ; 
+System.debug('Exam Result : ' + examResult);
+
+// declare and initiaze a variable called salary as Integer 
+// declare a Double variable called taxRate 
+// assign the value of taxRate according to below condition
+// if the salary is greater than 100K , taxRate is 0.3 else 0.15
+Integer salary = 150000; 
+// Double taxRate; 
+/*
+if (salary> 100000){
+    taxRate = 0.3 ; 
+}else{
+ 	taxRate = 0.15 ;    
+}
+*/
+ Double taxRate =  (salary> 100000) ? 0.3  : 0.15 ;  
+
+
+// if the score is less than 0 or more than 100 
+// print invalid score 
+// else 
+// print valid score 
+
+
+//Integer score2 = 77 ; 
+
+/*
+if( score2>100 || score2 <0 ){
+    System.debug('Invalid Score');
+}else{
+    System.debug('Valid score');
+}
+*/
+
+// Multi Branch if statement 
+
+// if the score is less than 0 or more than 100 
+// print invalid score 
+// if the score is more than 90 print A 
+// if the score is between 80 and 90 print B
+// if the score is between 70 and 80 print C
+// else print work harder 
+
+Integer score2 = 99 ; 
+
+if( score2 > 100 || score2 <0 ){
+    System.debug('Invalid Score');
+}else if(score2 > 90){
+    System.debug('You got A');
+}else if(score2 > 80){
+    System.debug('You got B');
+}else if(score2 > 70 ){
+    System.debug('You got C');
+}else{
+    System.debug('Try Harder');
+}
+
+
+// declare a String variable called season 
+// and initialize it's value 
+/*
+if it's spring  print  Go Camping 
+if it's summer  print  Go Swimming 
+if It's fall    print  Go Pick Pumkin
+if it's wintet   print  Go to sleep 
+if nothing match print invalid season 
+*/
+
+String season = 'summer' ; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

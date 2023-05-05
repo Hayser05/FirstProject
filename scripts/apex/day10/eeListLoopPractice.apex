@@ -31,9 +31,9 @@ System.debug('index Of Last Item ' + indexOfLastItem);
 // 2. then print out the last item value using get method
 System.debug('last Item value ' + numbers.get(indexOfLastItem));
 
-//in first loop
-//iterate over the list and print out the each items
-//skip item number 3 and 7 while printing
+// in first loop
+// iterate over the list and print out the each items
+// skip item number 3 and 7 while printing
 
 for (Integer index = 0; index < numbers.size(); index++) {
   // item 3   or  item 7
@@ -41,13 +41,15 @@ for (Integer index = 0; index < numbers.size(); index++) {
     continue;
   }
 
-  System.debug('index# ' + index + ' : ' + numbers.get(index));
+  System.debug('Index #' + index + ' : '
+                     + numbers.get(index));
 }
 
-//in second loop
-//iterate over the list and print out the each items
-//break out of the loop if the number is more than 100
-
+/**
+in second loop 
+iterate over the list and print out the each items 
+break out of the loop if the number is more than 100
+ */
 for (Decimal eachNum : numbers) {
   if (eachNum > 100) {
     break;
@@ -55,3 +57,5 @@ for (Decimal eachNum : numbers) {
 
   System.debug(eachNum);
 }
+
+// Try above using for each loop

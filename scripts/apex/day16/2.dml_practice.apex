@@ -42,6 +42,3 @@ DML : Data Manipulation Language
  // restore this deleted record from Recycle bin 
  undelete a1 ;  
   System.debug('a1 value after undelete is : ' + a1);
-
-
-  

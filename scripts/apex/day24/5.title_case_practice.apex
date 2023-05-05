@@ -27,4 +27,3 @@ System.debug('wordList value is : ' + wordList);
 // now join the list items to get the string
 name = String.join(wordList, ' ');
 System.debug('name value is : ' + name);
-

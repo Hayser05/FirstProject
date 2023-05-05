@@ -25,9 +25,7 @@ System.debug('contactList value is : ' + contactList);
 // Database.insert(The List you want to insert 
 //                 , specify you want All Or Nothing in boolean ); 
 // second parameter : allOrNothing
-    // if true -->> either all get inserted or none 
-    //get inserted if any item was failed to insert. 
-    // if false -->> items that successfully can be inserted will be 
-    //inserted and items can not be inserted will not. 
+    // if true -->> either all get inserted or none get inserted if any item was failed to insert 
+    // if false -->> items that successfully can be inserted will be inserted and items can not be inserted will not 
     // it will not fail the whole insert operation 
 Database.insert(contactList ,  false  ); 

@@ -1,50 +1,43 @@
-// 11. Create `List<Case>` with 4 Items with name `oldList` 
-List<Case> oldList = new List<Case>();
-//      - with below fields
-//        - `Subject` set to `Sample Case (1,2,3,4)`
-oldList.add(  new Case(Subject='Sample Case 1')  ); 
-oldList.add(  new Case(Subject='Sample Case 2')  ); 
-oldList.add(  new Case(Subject='Sample Case 3')  ); 
-oldList.add(  new Case(Subject='Sample Case 4')  ); 
 
-//      - **insert** into Salesforce
-insert oldList ; 
-// Database.insert(oldList, false); 
+Integer num1 = 100 ; 
+System.debug('num1 value is : ' + num1); 
 
-//    - Create a `Map<ID, Case>` from above List call it `oldMap`
-//      - It should contain `ID` of case as key, the `Case` itself as value
-Map<Id,Case> oldMap = new Map<Id,Case>(oldList); 
+// create a variable num2 and assign the value to whatever the value of num1 
 
-//    - Print out the `oldList` variable 
-//      - Observe It should be the **List** with ID generated
-System.debug('oldList value is : ' + oldList); 
-//    - Print out the `oldMap`  variable 
-//      - Observe key is `ID` and value is Record itself
-System.debug('oldMap value is : ' + oldMap); 
+Integer num2 = num1 ; 
+System.debug('num2 value is : ' + num2); 
 
-System.debug('------------------');
+num2 = 200 ; 
+System.debug('num1 value is after num2 update : ' + num1); 
+System.debug('num2 value is after num2 update : ' + num2); 
 
-//    - Create a new `List<Case>` called `newList`
-//      - Copy everything from `oldList` into `newList` in one shot
-List<Case> newList = new List<Case>(oldList);
 
-//    - Now Iterate over your `newList` with 4 copied Items above
-for(Case each : newList) {
-// - Update the `Subject` field value to 
-// - Whatever is the current Value followed by string ` New`
-// - So it will `Sample Case (1,2,3,4) New`
-    each.Subject = each.Subject + ' New' ;  
-    // each.Subject += ' New' ;  
-}
-// - Issue a `DML` statement to reflect the changes in Salesforce
-update newList ; 
 
-//    - Create a `Map<ID, Case>` from above List call it `newMap`
-//       - It should contain `ID` of case as key, the `Case` itself as value
-Map<ID, Case> newMap = new Map<ID, Case>(newList); 
-//    - Print out the `newList` variable 
-System.debug('newList value is : ' + newList); 
-//      - Observe It should be the **List** after the update
-//    - Print out the `newMap`  variable 
-System.debug('newMap value is : ' + newMap); 
-//      - Observe It should be the **Map** after the update
+Case c1 = new Case(Subject = 'My Case');
+insert c1 ; 
+System.debug('c1 value is : ' + c1); 
+// create a variable c2 and assign the value to whatever the value of c1
+Case c2 = c1 ; 
+System.debug('c2 value is : ' + c2); 
+
+c2.Subject = 'The guy over the wall';
+
+// print out c1 and c2 subject before inserting 
+System.debug('c1.Subject value before update DML is : ' + c1.Subject); 
+System.debug('c2.Subject value before update DML is : ' + c2.Subject); 
+
+update c1 ; 
+
+
+
+
+
+//  Jaffar is a Person 
+//  we can refer him as TypeMaster 
+
+// TypeMaster  =  new Jaffar () ; 
+
+//  we can also refer him as LD
+// LD = TypeMaster
+
+

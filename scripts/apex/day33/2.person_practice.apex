@@ -34,8 +34,10 @@ System.debug('p3.getAgeGroup() value is : '
                         + p3.getAgeGroup() );
 //p3.getAgeGroup() value is : teenager
 
-Boolean isHigher = p3.isHigherThan(170); // true
-System.debug('Nurzat is higher than 170? ' + isHigher );
-// Nurzat is higher than 170? true
-System.debug('p3.isHigherThan() value is : ' + p3.isHigherThan(190));
-// p3.isHigherThan() value is : false
+
+Boolean isHigher =  p3.isHigherThan(170) ;  // true
+System.debug('Nurzat is higher than 170? ' + isHigher);
+//Nurzat is higher than 170? true
+System.debug('p3.isHigherThan(190) value is : ' 
+                        + p3.isHigherThan(190));
+//p3.isHigherThan(190) value is : false

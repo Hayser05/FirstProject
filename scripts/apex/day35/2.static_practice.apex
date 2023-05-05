@@ -1,24 +1,13 @@
-// How do we access static field
-// we use ClassName.staticFieldName
 
-Order.taxRate = 0.3;
+Account a = new Account(Name='aaa'); 
 
-Order o1 = new Order('Coffee', 'Duaa', 3.99);
-o1.printOrder(); //
+BankAccount b1 = new BankAccount('Elmira',123456789, 400000);
 
-// System.debug(o1);
+b1.showDetails(); 
 
-Order o2 = new Order('Tea', 'Natalya', 7.99);
-o2.printOrder();
 
-// System.debug('Order.taxRate value is : '
-//                  + Order.taxRate);
 
-Order.showTaxRate();
-Order.taxRate = 0.4;
-Order.showTaxRate();
-o1.printOrder();
-o2.printOrder();
+
 
 Helper.printOneToN(4) ; 
 
@@ -56,6 +45,11 @@ System.debug('Helper.getOneToNList(4) value is : '
 //                      + Calculator.divide(100,0) );
 
 
+
+
+
+
+
 // System.debug(Fruit.count); 
 // Fruit f1 = new Fruit() ; 
 // System.debug(Fruit.count); 
@@ -63,7 +57,3 @@ System.debug('Helper.getOneToNList(4) value is : '
 // System.debug(Fruit.count); 
 // Fruit f3 = new Fruit() ; 
 // System.debug(Fruit.count); 
-
-
-
- 

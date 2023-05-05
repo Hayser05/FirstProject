@@ -1,7 +1,9 @@
+// declare a String variable called season 
+// and initialize it's value 
 /*
 if it's spring  print  Go Camping 
 if it's summer  print  Go Swimming 
-if It's fall    print  Go Pick Pumpkin
+if It's fall    print  Go Pick Pumkin
 if it's winter   print  Go to sleep 
 if nothing match print invalid season 
 */
@@ -13,7 +15,7 @@ if(season == 'spring'){
 }else if(season == 'summer'){
     System.debug('Go Swimming  ');
 }else if(season == 'fall'){
-    System.debug('Go Pick Pumpkin ');
+    System.debug('Go Pick Pumkin ');
 }else if(season == 'winter'){
     System.debug('Go to sleep ');
 }else{
@@ -21,6 +23,25 @@ if(season == 'spring'){
 }
 
 
+//-------------
+/*
+switch on expression {
+    when value1 {        // when block 1
+        // code block 1
+    }    
+    when value2 {        // when block 2
+        // code block 2
+    }
+    when value3 {        // when block 3
+        // code block 3
+    }
+    when else {          // default block, optional
+        // code block 4
+    }
+}
+*/
+season = 'Winter' ;  
+// equality check for String in switch statement is case-sensitive 
 switch on season{
     
     when 'spring'{
@@ -30,7 +51,7 @@ switch on season{
         System.debug('Go Swimming ');
     }
     when 'fall' {
-        System.debug('Go Pick Pumpkin ');
+        System.debug('Go Pick Pumkin ');
     }
     when 'winter' {
         System.debug('Go to sleep ');
@@ -40,17 +61,18 @@ switch on season{
     }
 }
 
+
+
 // Declare a variable called dayCode as Integer
 // initialize it's value 
 
 // check 
 // if the dayCode value 1, 2, 3, 4, 5 
-    // print weekday 
+	// print weekday 
 // if it's 6, 7
     // print weekend 
 // else 
     // print invalid day code 
-
 Integer dayCode = 3 ; 
 if(dayCode==1 || dayCode==2 || dayCode==3 || dayCode==4 || dayCode==5){
     System.debug('weekday');
@@ -60,7 +82,7 @@ if(dayCode==1 || dayCode==2 || dayCode==3 || dayCode==4 || dayCode==5){
     System.debug('invalid day code');
 }
 
-//------  use switch statement for solution 
+//------  use swicth statement for solution 
 switch on dayCode{
     
     when 1,2,3,4,5 {
@@ -70,10 +92,9 @@ switch on dayCode{
         System.debug('Weekend from switch');
     }
     when else {
-         System.debug('Invalid day code');   
+     	System.debug('Invalid day code');   
     }
 }
-
 
 
 
@@ -87,11 +108,11 @@ Integer itemPrice = 1 ;
 // simply print out Your shipping is free
 // print total is itemPrice 
 // if primeMember is false 
-     // itemPrice is greater than 35  ,
-            // print your shipping is free 
+	 // itemPrice is greater than 35  ,
+			// print your shipping is free 
      // itemPrice is less than 35 , 
-            // print out shipping cost is 5$
-            // print out total is  itemPrice + 5 
+			// print out shipping cost is 5$
+			// print out total is  itemPrice + 5 
 
 if(primeMember==true){  // you can also directly write if(primeMember)
     System.debug('Your shipping is free');
@@ -102,11 +123,14 @@ if(primeMember==true){  // you can also directly write if(primeMember)
     }else{
         System.debug('shipping cost is 5$');
         System.debug('total is ' +  (itemPrice+5)  );
-    }  
+    }
+   
+    
 }
 
 
 
+System.debug('How do we do '); 
 
 
 

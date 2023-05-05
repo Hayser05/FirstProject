@@ -22,10 +22,9 @@ System.debug('a1 value is : ' + a1);
 // print out Name and BillingState field value
 
 System.debug('a1.Name value is : ' + a1.Name  );
-System.debug('a1.BillingState value is : ' + a1.BillingState); 
-
-// change the value of AnnualRevenue to 1000000000.00
-a1.AnnualRevenue = 1000000000.00 ; 
+System.debug('a1.BillingState value is : ' + a1.BillingState);  
+// change the value of AnnualRevenue to 
+ a1.AnnualRevenue = 1000000000.00 ; 
 System.debug('a1.AnnualRevenue value is : ' + a1.AnnualRevenue); 
 
 
@@ -42,13 +41,7 @@ System.debug('a3 value is : ' + a3);
 Account a4 = new Account(Name = 'Microsoft');
 System.debug('a4 value is : ' + a4);  
 
-// insert a1 ;
-// insert a2 ;
-// insert a3 ;
-// insert a4 ;
-
-
-
-
-
-
+// insert a1 ; 
+// insert a2 ; 
+// insert a3 ; 
+// insert a4 ; 

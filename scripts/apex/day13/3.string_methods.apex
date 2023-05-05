@@ -9,7 +9,6 @@ https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_meth
 
 String message = 'Hello World' ; 
 System.debug('message value is : ' + message); 
-
 //--------------Checking for String contains some substring 
 /**
 contains(substring)
@@ -37,22 +36,21 @@ Returns true if the current String doesn’t contain any of the characters in th
  */
 System.debug('message.containsNone(\'Hlo\') value is : ' 
                                 + message.containsNone('Hlo')   ); 
+                      // false because we have all of teh characters 
 
 System.debug('message.containsNone(\'AB\') value is : ' 
                                 + message.containsNone('AB')   ); 
-
+                      // true because we do not have A or B 
 System.debug('message.containsNone(\'LO\') value is : ' 
                                 + message.containsNone('LO')   ); 
+                       // true because we do not have L or O 
 
-System.debug('message has no Number : ' + message.containsNone('0123456789')   ) ; // TRUE
+System.debug('message has no Number : ' + message.containsNone('0123456789')   ) ; //false
 
-
-
-System.debug('------------------');
+System.debug('--------containsOnly----------');
 /**
 containsOnly(inputString)
-Returns true if the current String contains characters only from the specified sequence of characters and not any other characters; 
-otherwise, returns false.
+Returns true if the current String contains characters only from the specified sequence of characters and not any other characters; otherwise, returns false.
  */
 // Hello world is made of these characters  : Helo Wrd 
 
@@ -63,16 +61,16 @@ System.debug('message.containsOnly(\'He\') value is : ' + message.containsOnly('
 
 System.debug('message.containsOnly(\'ABC\') value is : ' + message.containsOnly('ABC')); 
 
+
 String text = 'aaaaoooeee'; 
 System.debug('text variable value is : ' + text); 
-// check if this text only contains vowel : a e i o u 
-System.debug('text.containsOnly(\'aeiou\') value is : ' + text.containsOnly('aeiou')  ); 
-
+// check if this text only contains vowel : a e o u i 
+System.debug('text.containsOnly(\'aeoui\') value is : ' + text.containsOnly('aeoui')  ); 
 
 
 System.debug('------Equality------------');
 System.debug('is message == Hello World ' +    ( message=='Hello World' )       ); //true
-System.debug('is message == hello world ' +    ( message=='hello world' )       ); //false
+System.debug('is message == hello world ' +    ( message=='hello world' )       ); //true
 
 // equals(anotherString) method for checking equality in case sensitive manner
 
@@ -98,19 +96,13 @@ Joins the elements of the specified Collection, such as a List, into a single St
  /**
 7. Write an Apex code that create List or Array of 5 String values
    - Create a String variable called joinedText
-   - Loop through all the items and append one item after another into joinedText variable separated by hyphen(-) 
-   and last item should not have -
+   - Loop through all the items and append one item after another into joinedText variable separated by hyphen(-) and last item should not have -
    - Example : Your list `{'This','is','The','Way','Student'}`
      - value of joinedText `'This-is-The-Way-Student'`
 */
 List<String> strList = new List<String>{'This','is','The','Way','Student'};
 String joinedText = String.join(strList , '-') ; 
 System.debug('joinedText value is : ' + joinedText); 
-
-
-
-
-
 
 String str = 'abcabc';
 /**
@@ -119,4 +111,4 @@ Removes all occurrences of the specified substring and returns the String result
  */ 
  System.debug('str.remove(\'a\') value is : ' + str.remove('a') ); 
  str = str.remove('a'); 
- System.debug('str value is : ' + str);
+ System.debug('str value is : ' + str); 

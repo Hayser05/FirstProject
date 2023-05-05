@@ -11,7 +11,7 @@ Create Custom Object
           Price as currency   
 
 Now we need to access here in VSCode 
-Go to command pallatte and type 
+Go to command pallette and type 
 SFDX: Refresh Object Definition
 select All object 
 now you have access to latest changes you made under Object manager 
@@ -27,28 +27,21 @@ v1.Price__c = 127000 ;
 System.debug('v1 value is : ' + v1); 
 insert v1 ; 
 System.debug('v1 value is : ' + v1); 
+ 
+// Create List of Vehicle and insert in bulk 
 
-// Create List of Vehicle and insert in bulk
 List<Vehicle__c> carList = new List<Vehicle__c>();
-// update the price to 100K and add v1 into this List
-v1.Price__c = 100000;
-carList.add(v1);
+// update the price to 100K and add v1 into this list 
+v1.Price__c = 100000 ; 
+carList.add(v1) ; 
 // add 2 more Vehicle__c with Make filled up
-carList.add(new Vehicle__c(Make__c = 'Lucid'));
-carList.add(new Vehicle__c(Make__c = 'Toyota'));
+carList.add(  new Vehicle__c(Make__c = 'Lucid')     ) ; 
+carList.add(  new Vehicle__c(Make__c = 'Toyota')     ) ; 
 
 System.debug('carList value is : ' + carList); 
 
-// insert what's not already in Salesforce
-// and update what is already in Salesforce
+// insert what's not already in salesforce
+// and update what is already in salesforce
 // from this list into Salesforce
 // upsert DML operation : update + insert
-upsert carList ;
-
-
-
-
-
-
-
-
+upsert carList ; 

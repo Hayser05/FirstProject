@@ -1,3 +1,4 @@
+
 // This is how we can comment 
 // let's get started 
 /*
@@ -6,22 +7,30 @@
 */
 
 /*
- In Apex we wrap up text, also known as String
- inside single quote  
+ In Apex, we wrap up text, also known as String , inside single quote
+ We will use the term String for the rest of the time.
 */
+
+// in order to see the program flow, it's very common to show some message in the console and below statement (like sentence in english) ,
+// will display String Hello World in the console output
 
 System.debug('Hello World');
 
 // APEX is Case Insensitive language
-SYstEm.DebUg('More Hello') ; 
+// you can write it in uppercase or lowercase for the keyword
+// it will all work. 
+// however we follow good convention 
+//and will never write code as below 
+// even though it its a valid syntax (grammar of apex) 
+sYsTeM.dEbUg('More Hello') ; 
 // If the single quote need to be used inside String
 // It will accidentally end the string 
 // you can add backslash right in front of it 
 // to instruct computer not to treat it as ending of the string
-// just treat it as part of the text
+// just treat it as part of the text , it's know as escape character
 System.debug('Let\'s learn variable');
 
-// Creating and string variable
+// Creating and using variable
 //DataType variableName = someValueHere
 
 String name = 'SF User';
@@ -33,7 +42,7 @@ System.debug(name);
 // print  My Name is : theValueOfNameVariable
 System.debug('My Name is : ' + name );
 
-// give a new value to variable you already created earlier
+// give a new value to variable you alreay created earlier
 name = 'Akbar'; 
 System.debug('My new name is ' + name );
 
@@ -86,7 +95,7 @@ Integer age  ;
 // Assigning the value of the variable
 age = 20 ; 
 
-// Declaring variable and initializing it's value 
+// Declaring variable and initilizing it's value 
 Integer amount = 100 ; 
 // re-assigning value 
 amount = 200 ; 
@@ -94,7 +103,7 @@ amount = 200 ;
 // Null as a value , null means there is no value 
 
 //Integer count ;  // if a variable is not assigned to any value 
-                   //it will get null value
+				   //it will get null value
 Integer count = null ; // here we are explicitly assigning to null
 System.debug('The value of count is ' + count);
 
@@ -135,3 +144,19 @@ System.debug('The multiplication result between ' + num1 + ' and ' + num2 + ' is
 // division 
 result = num1 / num2 ; 
 System.debug('The division result between ' + num1 + ' and ' + num2 + ' is ' +  result );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,4 @@
+
 List<Integer> numberList = new List<Integer>{17,69,22,66,31};
 
 System.debug('numberList value is : ' + numberList); 
@@ -52,9 +53,15 @@ Boolean lstHasNumbers =  numberList.isEmpty() ;
 System.debug('lstHasNumbers value is : ' + lstHasNumbers); 
 //lstHasNumbers value is : true
 
-// Print out FOUND IT if you see 66 in the list
-// store teh result into a Boolean variable
-// and print it out at the end
+// contains( value to check)
+// it return true if the value exists ,return false if not 
+
+System.debug('has 31 or not : ' + numberList.contains(31)  ); 
+
+// Print out FOUND IT if you see 66 in the list 
+// Store the result into a Boolean variable 
+// and print it out at the end 
+
 Boolean has66 = false ; 
 
 for(Integer each : numberList) {
@@ -67,19 +74,20 @@ for(Integer each : numberList) {
 }
 
 System.debug('has66 value is : ' + has66); 
-    
-
-// .Add()
-// .add(0, value)
-// .get()
-// .Set()
-// .clear()
-// .remove()
-// .isEmpty()
-// .indexOf()
-// .contains()
-// .size()
+//FOUND IT
+//has66 value is : true
 
 
 
+//numberList value is : (777, 17, 69, 22, 66, 31, 100)
+// How to find the index of certain element in the list 
+// indexOf(valueToBeChecked)
+// return the index if found , return -1 if not found !!
 
+Integer indexOf22 = numberList.indexOf(22); 
+System.debug('indexOf22 value is : ' + indexOf22); 
+            //indexOf22 value is : 3
+// remove 22 from the list 
+numberList.remove(indexOf22) ; 
+System.debug('numberList value is : ' + numberList); 
+// numberList value is : (777, 17, 69, 66, 31, 100)

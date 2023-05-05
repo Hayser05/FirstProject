@@ -17,16 +17,10 @@ normalizeSpace()
 Returns the current String with leading, trailing, and repeating white space characters removed.
  */
 
- System.debug('message.normalizeSpace()  value is : ' + message.normalizeSpace() );
-
+ System.debug('message.normalizeSpace()  value is : ' + message.normalizeSpace() ); 
 
  /**
  deleteWhitespace()
 Returns a version of the current String with all white space characters removed.
   */
   System.debug('message.deleteWhitespace()  value is : ' + message.deleteWhitespace() ); 
-
-
-
-
-  

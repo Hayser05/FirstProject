@@ -1,19 +1,15 @@
-/**
-Declare and initialize an Integer variable. 
-checks if a given integer is positive, negative, or zero. 
-If the number is positive, the program should print "Positive." 
-If the number is negative, the program should print “negative”
-Else print Zero
+// Task Set 1
+// 2. Declare and initialize an **Integer** variable. 
+Integer num = 77 ;
+//    - checks if a given integer is **positive**, **negative**, or **zero**. 
 
- */
- Integer num = 95;
- if(num > 0){
-    System.debug('Positive');
-
- }else if( num < 0){
+//- If the num is **positive**, the program should print `Positive` 
+if( num>0 ){
+    System.debug('Positive'); 
+//- If the num is **negative**, the program should print `negative`
+}else if( num<0 ){
     System.debug('Negative');
-
- }else{
+//- Else print `Zero`
+}else{
     System.debug('Zero');
-
- }
+}

@@ -33,29 +33,9 @@ caseList.add(cBla) ;
 //caseList.add(   new Case(Subject='Apex Subject2')   ); 
 
 // insert this list of Case into Salesforce using insert 
- //insert caseList ; 
-
- System.debug('--------Before Inserting List----------');
+System.debug('--------Before Inserting List----------');
  System.debug(caseList) ; 
- //insert caseList ; 
+ insert caseList ; 
  System.debug('--------After Inserting List----------');
  System.debug(caseList) ; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

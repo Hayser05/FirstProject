@@ -15,7 +15,7 @@ Integer largerNumber = Math.max(num1, num2);
 
 Double d1 = 15.7d;
 System.debug('d1 value is : ' + d1);
-// convert this double value to int
+// covert this double value to int
 Integer score1 = d1.intValue();
 System.debug('score1 value is : ' + score1);
 
@@ -44,7 +44,10 @@ System.debug('randomInt value is : ' + randomInt);
 
 //  print out 50 random numbers
 for (Integer i = 1; i <= 50; i++) {
-  Integer randomNumber = Math.round(Math.random() * 100);
+  // here is how we can do it in one shot since we do not need double variable anywhere
+  // Math.random() * 100 will generate random double between 0-100 
+  // and pass it to Math.round method so it can be rounded up to Integer from double
+  Integer randomNumber = Math.round( Math.random() * 100 );
   System.debug('randomNumber value is : ' + randomNumber);
 }
 

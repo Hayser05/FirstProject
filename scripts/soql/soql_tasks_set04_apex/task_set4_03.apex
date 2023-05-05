@@ -13,12 +13,9 @@ List<Opportunity> orphanOpps = [SELECT Name, Amount
                                 WHERE AccountId = NULL]; 
 // Add All the orphanOpps under Account with name Super Parent.
 for(Opportunity each : orphanOpps) {
-    each.AccountId = supeAccId ;
-    each.Amount = 1000 ; // just to make the trigger happy. 
+    each.AccountId = supeAccId ; 
+    each.Amount = 1000 ; // just to make the trigger happy 
 }
 
 // perform DML Operation to save it 
 update orphanOpps ; 
-
-
-

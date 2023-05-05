@@ -1,4 +1,5 @@
 /**
+
 Create an Account with below fields 
     Name , AnnualRevenue, Industry
 insert this into your org 
@@ -7,10 +8,8 @@ Create an Opportunity under this Account
     with required fields filled up 
     insert this record 
 
- using your Opportunity variable
-    access parent record field and print it out 
- */
 
+ */
 Account a1 = new Account(Name = 'SF TDX 23',
                          AnnualRevenue = 1000000,
                          Industry = 'Technology'
@@ -44,3 +43,4 @@ for(Integer i=1; i<=5 ;i++) {
 }
 System.debug('caseList value is : ' + caseList); 
 insert caseList ; 
+

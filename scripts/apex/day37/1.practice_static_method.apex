@@ -3,11 +3,6 @@
 
 // Lead ld2 = Utils.getLead('Stark','Stark Industry', false) ; 
 // System.debug('ld2 value is : ' + ld2);
-// Lead ld1 = Utils.getLead('Snow', 'Nightwatch LLC', true);
-// System.debug('ld1 value is : ' + ld1);
-
-// Lead ld2 = Utils.getLead('Stark','Stark Industry', false) ; 
-// System.debug('ld2 value is : ' + ld2);
 
 
 // List<Lead> myLeads1 = Utils.getLeads('Lannister', 'Westro', true, 4) ; 
@@ -33,5 +28,4 @@ myLeads3.add( new Lead(FirstName='diana', LastName='Prince',Company='Amazon' ));
 // LeadTriggerHandler.handleBeforeInsert(myLeads3) ; 
 // System.debug('myLeads3 value after the call is : ' + myLeads3);
 
-insert myLeads3 ;
-
+insert myLeads3 ; 

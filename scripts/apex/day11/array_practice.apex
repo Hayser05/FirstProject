@@ -39,10 +39,17 @@
 // //  MyAwesomeType
 // List<MyAwesomeType>
 // MyAwesomeType[]
+/// below code will work because for apex compiler they are same thing
+// Integer[] numbers = new List<Integer>(); 
 
 for(String each : groceries) {
     System.debug('Current value : ' + each);
 }
+
+// System.debug('value is : ' +  groceries[0]    ); 
+// System.debug('value is : ' +  groceries[1]    ); 
+// System.debug('value is : ' +  groceries[2]    ); 
+// System.debug('value is : ' +  groceries[3]    ); 
 
 for(Integer index=0; index<4 ;index++) {
     System.debug('value is : ' +  groceries[index]    ); 

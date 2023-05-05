@@ -1,3 +1,4 @@
+
 // Animal a1 = new Animal();
 
 // if you have a variable 
@@ -15,4 +16,4 @@ Animal a2 = new Cat('Poncik', 5 , 'Grey');
 // Flyable f1 = new Flyable(); 
 
 Flyable f1 = new Bird(); 
-Flyable f2 = new Plane();
+Flyable f2 = new Plane(); 

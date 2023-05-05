@@ -1,3 +1,4 @@
+
 // Get 1 Account Record (Name, AnnualRevenue, Rating)
 // SELECT Name, AnnualRevenue, Rating FROM Account LIMIT 1
 // and Store it into Account variable
@@ -40,7 +41,6 @@ List<Lead> leadLst = [SELECT Name, Status FROM LEAD
                       WHERE Status = 'Working - Contacted' ] ; 
 
 for(Lead each : leadLst) {
-    System.debug(each.Name + ' -- ' + each.Status  );
+    System.debug(each.Name + ' --> ' + each.Status  );
 }
-    
 

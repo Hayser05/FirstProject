@@ -1,6 +1,6 @@
 /**
   Count from 1 -10 using for loop 
-    print the count multiplied by 5
+    print the count multplied by 5
     output should look like this : 
     1 X 5 = 5 
     2 X 5 = 10 
@@ -13,11 +13,10 @@ for(Integer count=1 ; count<=10 ; count++ ){
 
 /**
 Continue from above code, 
-Above code works great if you just want to get the multiplication table of 5 , 
-we want to be able to provide any number not just 5 and generate multiplication table of any numbers 
+Above code works great if you just want to get the multiplication table of 5 , we want to be able to provide any number not just 5 and generate multiplication table of any numbers 
  */
-System.debug('---------------------------------------');
- 
+System.debug('------------------') ; 
+
 //  Integer num = 4 ; 
 //  Integer count = 7 ; 
 
@@ -27,14 +26,15 @@ System.debug('---------------------------------------');
  // eventually generate this output 
  //  in below format 
  //  // 1 X 5 = 5 
+ // System.debug(count + ' X ' + num + ' = ' + ( count*num )   ); 
 
-//  System.debug(count + ' X ' + num + ' = ' + (count*num));
+Integer num = 2 ; 
 
-Integer num = 2 ;
-for(Integer count = 1 ; count<=10 ; count++ ){
-    System.debug(count + ' X ' + num + ' = ' + (count*num));
+for( Integer count=1 ; count<=10 ; count++){
+    System.debug(count + ' X ' + num + ' = ' + ( count*num )  ); 
 }
 
+System.debug('------------------') ; 
 /**
 Give a number , print out below 
 
@@ -45,7 +45,7 @@ luckyNumber + 3 = the result
 luckyNumber + 10= the result
  */
 
-Integer luckyNumber = 7 ; 
+Integer luckyNumber = 50 ; 
 /**
 7 + 1 = 8 
 7 + 2 = 9 
@@ -61,24 +61,3 @@ for(Integer count=1 ; count<=10 ; count ++){
                 +  count + ' = ' 
                 + (luckyNumber+count)   ) ; 
 }
-
-/**
-Get the sum of number from 1-10
-and store it into a variable called sum 
- */
-
-
- Integer sum = 0 ; 
-
-for(Integer count=1 ; count<=10 ; count++){
-
-    System.debug('Iteration number ' + count); 
-    //sum = sum + count ; 
-    sum += count ; 
-    System.debug('Sum : ' + sum ); 
-}
-
-System.debug('Sum of 1 to 10 is ' + sum ) ; 
-
-
-

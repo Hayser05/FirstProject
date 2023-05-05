@@ -40,7 +40,7 @@ System.debug('deleted accounts : ' + toBeDeletedAccounts.size() );
 
 // delete toBeDeletedAccounts ; 
 
-//delete  [SELECT Id, Name FROM Account WHERE Name = 'Acc from Apex'];
+// delete  [SELECT Id, Name FROM Account WHERE Name = 'Acc from Apex'];
 
 // result of [ SOQL QUERY ] is almost always List of sObject type
 // if we do not need this List variable we can directly use it [SOQL]

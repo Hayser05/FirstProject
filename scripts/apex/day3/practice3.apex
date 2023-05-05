@@ -1,8 +1,8 @@
-String studentName      = 'Okan' ;
-Integer studentAge      = 35 ; 
-String studentState     = 'CA';
-Boolean attendClass     = true ;  
-Decimal studentHeight     = 5.10 ; 
+String studentName 		= 'Okan' ;
+Integer studentAge 		= 35 ; 
+String studentState 	= 'CA';
+Boolean attendClass 	= true ;  
+Decimal studentHeight 	= 5.10 ; 
 /*
 System.debug('My Name is ' +  studentName  + '.'  );
 System.debug('I am ' +  studentAge + ' years old.'   );
@@ -21,13 +21,13 @@ System.debug('My Name is ' +   studentName
 // Compound assignment operator += , -=, *= , /=
 // Increment and Decrement Operator  ++  --
 
-// Relational (Comparison) Operators  >, >=, <, <=, == , != , <>
+// Relational (Comparision) Operators  >, >=, <, <=, == , != , <>
 // compare two items and return Boolean result (true|false)
 
 // Logical Operators  && (AND)  || (OR)   !(NOT)
 
 
-// Shortcut for declaring and assigning multiple variables of same type 
+// Shortcut for declaring and assigining multiple variables of same type 
 Integer num1 = 100, num2= 200, num3= 300 ; 
 
 Decimal price1 = 699.99 , price2 = 799.99 ,  price3 = 1100.99 ; 
@@ -41,16 +41,16 @@ System.debug('Is price1 is greater than price3 : '  + (price1 > price3)    );
 // into a Boolean variable and print it out 
 
 Boolean result1 = (price1 > price2)  &&  (price2< price3) ;
-System.debug('Result of price1 greater than price2 AND price2 less than price3: ' + result1);
+System.debug('Result of price1 greater than price2 ' 
+             +  ' AND price2 less than price3: '
+             + 	result1);
 
-// Increment and Decrement operators to increase|decrease the value by one 
+// Increament and Decreament operators to increase|decrease the value by one 
 
 // ++ used in the beginning of the variable is called pre-increment  ++score
 // ++ used in the end of the variable is called post-increment  score++
 // -- used in the beginning of the variable is called pre-decrement  --score
 // -- used in the end of the variable is called post-decrement  score--
-
-
 
 Integer count = 10 ; 
 
@@ -77,7 +77,6 @@ System.debug(++count     +'-------'+   count);  //11 ---11
 System.debug(--count     +'-------'+   count);  //10----10
 
 
-
 // Conditional statements : 
 //conditionally execute part of the code 
 
@@ -101,7 +100,7 @@ if( examScore > 66 ){
     System.debug('Passed');
     System.debug('Congrats');
 }else {
-     System.debug('Failed');
+ 	System.debug('Failed');
     System.debug('Try again Later');
 }
 
@@ -109,12 +108,12 @@ if( examScore > 66 ){
 // give a value 
 // if the value equal Fady , print clockmaster 
 // else print No Break
-String studentName1 = 'Fady' ; 
+String studentName = 'Osman' ; 
 
-if(studentName1 == 'Fady'){
-    System.debug('clockmaster, Break Time!!');
+if(studentName == 'Fady'){
+	System.debug('clockmaster, Break Time!!');
 }else{
-    System.debug('No Break ');
+	System.debug('No Break ');
 }
 
 
@@ -126,7 +125,7 @@ if(studentName1 == 'Fady'){
   assign the value of rating to hot 
   otherwise assign the value of rating to cold 
   print out the rating variable outside your if statement 
-*/    
+*/	
 
 //Integer annualRevenue = 500 ;
 //String rating ; 
@@ -149,41 +148,44 @@ String rating = (annualRevenue > 100000) ? 'hot' : 'cold' ;
 System.debug('Rating is ' + rating);
 
 
-// declare and initialize a variable called score1 
+// declare and initiaze a variable called score1 
 // declare a String variable called examResult 
 // assign the value of examResult according to the score1 > 66 or not
 Integer score1 = 67 ; 
 String examResult = (score1>66) ? 'PASS' : 'FAIL'  ; 
 System.debug('Exam Result : ' + examResult);
 
-// declare and initialize a variable called salary as Integer 
+// declare and initiaze a variable called salary as Integer 
 // declare a Double variable called taxRate 
 // assign the value of taxRate according to below condition
 // if the salary is greater than 100K , taxRate is 0.3 else 0.15
-
 Integer salary = 150000; 
 // Double taxRate; 
 /*
 if (salary> 100000){
     taxRate = 0.3 ; 
 }else{
-     taxRate = 0.15 ;    
+ 	taxRate = 0.15 ;    
 }
 */
- Double taxRate =  (salary> 100000) ? 0.3  : 0.15 ; 
+ Double taxRate =  (salary> 100000) ? 0.3  : 0.15 ;  
 
- // if the score is less than 0 or more than 100 
+
+// if the score is less than 0 or more than 100 
 // print invalid score 
 // else 
 // print valid score 
 
-Integer score2 = 77 ; 
 
+//Integer score2 = 77 ; 
+
+/*
 if( score2>100 || score2 <0 ){
     System.debug('Invalid Score');
 }else{
     System.debug('Valid score');
 }
+*/
 
 // Multi Branch if statement 
 
@@ -194,20 +196,48 @@ if( score2>100 || score2 <0 ){
 // if the score is between 70 and 80 print C
 // else print work harder 
 
-Integer score = 99 ; 
+Integer score2 = 99 ; 
 
-
-if( score > 100 || score2 <0 ){
+if( score2 > 100 || score2 <0 ){
     System.debug('Invalid Score');
-}else if(score > 90){
+}else if(score2 > 90){
     System.debug('You got A');
-}else if(score > 80){
+}else if(score2 > 80){
     System.debug('You got B');
-}else if(score > 70 ){
+}else if(score2 > 70 ){
     System.debug('You got C');
 }else{
     System.debug('Try Harder');
 }
+
+
+// declare a String variable called season 
+// and initialize it's value 
+/*
+if it's spring  print  Go Camping 
+if it's summer  print  Go Swimming 
+if It's fall    print  Go Pick Pumkin
+if it's wintet   print  Go to sleep 
+if nothing match print invalid season 
+*/
+
+String season = 'summer' ; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

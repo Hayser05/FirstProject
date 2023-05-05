@@ -1,3 +1,5 @@
+
+
 //  OnlineStudent o2 = new OnlineStudent('Deaton','F',201, 900800700);
 // // System.debug('o2 value is : ' + o2);
 //  LocalStudent l2 = new LocalStudent(); 
@@ -29,3 +31,5 @@
 // l1.seatId  = 5 ; 
 // System.debug('l1 value is : ' + l1);
 // l1.study();  
+
+ 

@@ -38,4 +38,5 @@ insert c2 ;
 Case myCase = new Case( Subject='Case under Apex Contact 2' , 
                         ContactId = c2.Id );
 // insert this case into SF and observe the result 
-insert myCase ; 
+insert myCase ;  
+

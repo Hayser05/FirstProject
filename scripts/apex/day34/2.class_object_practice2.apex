@@ -46,7 +46,3 @@ System.debug('studentLst value is : ' + studentLst);
 
 // Loop through each item in this List 
 // and call the study method on each student 
-
-for (Student each : studentLst) {
-     each.study(5);
-} 

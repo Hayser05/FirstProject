@@ -1,3 +1,4 @@
+
 // Get the Contact Id of Avi Green 
 Id aviId = [SELECT Id FROM Contact
             WHERE FirstName = 'Avi' LIMIT 1 ].Id ; 
@@ -15,8 +16,8 @@ insert bookLst ;
 
 
 
+
+
+
 //Book__c b1 = new Book__c(Name='LOTR');
 //insert b1 ; 
-
-
-

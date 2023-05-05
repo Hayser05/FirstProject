@@ -15,6 +15,9 @@ p1.printName(); //printing the person name Hyder 2.0
 p1.setAgeAndHeight(21, 180); 
 p1.describePerson(); 
 //Hyder 2.0 is 21 and height is 180
+p1.setPersonInfo('Hyder 3.0', 18, 190);
+p1.describePerson();
+//Hyder 3.0 is 18 and height is 190
 
 System.debug('------------------');
 
@@ -34,7 +37,6 @@ p2.printName();
 p2.setAgeAndHeight(18, 156);
 p2.describePerson() ;  
 // AI Marina is 18 and height is 156
-
-
-
-
+p2.setPersonInfo('AI Marina v2', 16, 170.5);
+p2.describePerson();
+//AI Marina v2 is 16 and height is 170
