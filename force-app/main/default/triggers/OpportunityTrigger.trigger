@@ -24,17 +24,16 @@ trigger OpportunityTrigger on Opportunity(
       // Trigger.oldMap =>  Map<Id,Opportunity> with old fields value
       Opportunity oldOp = Trigger.oldMap.get(each.Id);
       // if the stageName has CHANGED to Closed Won
-      if( each.StageName!=oldOp.StageName && each.StageName=='Closed Won'){
-        
-        Task t = new Task(); 
-        t.Subject       = 'Follow up with renewal ' + each.Name; 
-        t.ActivityDate  = Date.today() + 1 ; 
-        t.WhatId        = each.Id ; 
-        taskList.add(t);  
+      if (each.StageName != oldOp.StageName && each.StageName == 'Closed Won') {
+        Task t = new Task();
+        t.Subject = 'Follow up with renewal ' + each.Name;
+        t.ActivityDate = Date.today() + 1;
+        t.WhatId = each.Id;
+        taskList.add(t);
       }
     }
-    // outside the loop , add insert one time 
-    insert taskList ; 
+    // outside the loop , add insert one time
+    insert taskList;
   }
 
   // Requirement :

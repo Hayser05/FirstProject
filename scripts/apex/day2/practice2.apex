@@ -1,4 +1,4 @@
-String studentName 		= 'Okan' ;
+//String studentName 		= 'Okan' ;
 Integer studentAge 		= 35 ; 
 String studentState 	= 'CA';
 Boolean attendClass 	= true ;  
@@ -10,7 +10,7 @@ System.debug('I live in ' + studentState + ' State.' );
 System.debug('I attend class daily ' + attendClass);
 System.debug('I am ' + studentHeight + ' feet tall');
 */
-System.debug('My Name is ' +   studentName  
+System.debug('My Name is ' +   //studentName  
              + '. I am ' +  studentAge + ' years old.' 
              + 'I live in ' + studentState + ' State.'
              + 'I attend class daily ' + attendClass
@@ -21,13 +21,13 @@ System.debug('My Name is ' +   studentName
 // Compound assignment operator += , -=, *= , /=
 // Increment and Decrement Operator  ++  --
 
-// Relational (Comparision) Operators  >, >=, <, <=, == , != , <>
+// Relational (Comparison) Operators  >, >=, <, <=, == , != , <>
 // compare two items and return Boolean result (true|false)
 
 // Logical Operators  && (AND)  || (OR)   !(NOT)
 
 
-// Shortcut for declaring and assigining multiple variables of same type 
+// Shortcut for declaring and assigning multiple variables of same type 
 Integer num1 = 100, num2= 200, num3= 300 ; 
 
 Decimal price1 = 699.99 , price2 = 799.99 ,  price3 = 1100.99 ; 
@@ -45,7 +45,7 @@ System.debug('Result of price1 greater than price2 '
              +  ' AND price2 less than price3: '
              + 	result1);
 
-// Increament and Decreament operators to increase|decrease the value by one 
+// Increment and Decrement operators to increase|decrease the value by one 
 
 // ++ used in the beginning of the variable is called pre-increment  ++score
 // ++ used in the end of the variable is called post-increment  score++
@@ -148,14 +148,14 @@ String rating = (annualRevenue > 100000) ? 'hot' : 'cold' ;
 System.debug('Rating is ' + rating);
 
 
-// declare and initiaze a variable called score1 
+// declare and initialize a variable called score1 
 // declare a String variable called examResult 
 // assign the value of examResult according to the score1 > 66 or not
 Integer score1 = 67 ; 
 String examResult = (score1>66) ? 'PASS' : 'FAIL'  ; 
 System.debug('Exam Result : ' + examResult);
 
-// declare and initiaze a variable called salary as Integer 
+// declare and initialize a variable called salary as Integer 
 // declare a Double variable called taxRate 
 // assign the value of taxRate according to below condition
 // if the salary is greater than 100K , taxRate is 0.3 else 0.15
@@ -217,7 +217,7 @@ if( score2 > 100 || score2 <0 ){
 if it's spring  print  Go Camping 
 if it's summer  print  Go Swimming 
 if It's fall    print  Go Pick Pumkin
-if it's wintet   print  Go to sleep 
+if it's winter   print  Go to sleep 
 if nothing match print invalid season 
 */
 

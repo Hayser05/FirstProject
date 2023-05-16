@@ -95,7 +95,7 @@ Integer age  ;
 // Assigning the value of the variable
 age = 20 ; 
 
-// Declaring variable and initilizing it's value 
+// Declaring variable and initializing it's value 
 Integer amount = 100 ; 
 // re-assigning value 
 amount = 200 ; 
