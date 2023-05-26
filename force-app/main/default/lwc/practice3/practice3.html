@@ -9,7 +9,20 @@
         type="text"
         label="My Message"
         onchange={handleChange}
+        value={inputValue}
       ></lightning-input>
+
+      <lightning-button
+        variant="brand"
+        label="Reset"
+        onclick={handleReset}
+      ></lightning-button>
+
+      <lightning-button
+        variant="destructive"
+        label="Clear"
+        onclick={handleClear}
+      ></lightning-button>
     </div>
   </lightning-card>
 </template>
