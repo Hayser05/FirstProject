@@ -5,7 +5,7 @@ import { ShowToastEvent } from "lightning/platformShowToastEvent";
 export default class Practice23 extends LightningElement {
   objectApiName = ACCOUNT_OBJECT;
 
-  recordId = "001Dn00000UJny1IAD";
+  recordId = "006Dn000009xcULIAY";
 
   handleSuccess(event) {
     const showToastEvent = new ShowToastEvent({
