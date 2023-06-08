@@ -20,7 +20,6 @@ public with sharing class AccountController {
    * @param accName name of account you are searching
    * @return first matching account in your salesforce org
    */
-
   @AuraEnabled(cacheable=true)
   public static Account getAccountByName(String accName) {
     Account a = [
@@ -51,14 +50,18 @@ public with sharing class AccountController {
       WITH SECURITY_ENFORCED // WILL ENFORCE FIELD LEVEL SECURITY
     ];
   }
+
   /**
    * Create a static method called getAccountsIfRevenueLessThan
    * @param maxRevenue the upper limit of AnnualRevenue
    * @return List<Account> that has annual revenue less than maxRevenue
    * make it available for your lwc
    */
+
   @AuraEnabled(cacheable=true)
   public static List<Account> getAccountsIfRevenueLessThan(Decimal maxRevenue) {
+    // Integer x = 10/0 ;
+
     return [
       SELECT Id, Name, AnnualRevenue
       FROM Account
