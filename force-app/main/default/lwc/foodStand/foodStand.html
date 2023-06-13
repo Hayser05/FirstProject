@@ -5,10 +5,14 @@
       <!-- <c-food-item item={oneItem}> </c-food-item> -->
 
       <!-- display all food items from food array
-            and use the child component for displaying
-            pass the data to the child -->
+          and use the child component for displaying
+          pass the data to the child -->
       <template for:each={foodArray} for:item="each">
-        <c-food-item key={each.id} item={each}></c-food-item>
+        <c-food-item
+          key={each.id}
+          item={each}
+          onpick={handleChildPickEvent}
+        ></c-food-item>
       </template>
     </div>
   </lightning-card>
