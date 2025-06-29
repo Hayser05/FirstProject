@@ -1,4 +1,4 @@
-import { createElement } from "lwc";
+import { createElement } from '@lwc/engine-dom';
 import Practice10 from "c/practice10";
 
 describe("c-practice10", () => {

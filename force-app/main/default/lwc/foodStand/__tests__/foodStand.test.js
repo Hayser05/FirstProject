@@ -1,4 +1,4 @@
-import { createElement } from "lwc";
+import { createElement } from '@lwc/engine-dom';
 import FoodStand from "c/foodStand";
 
 describe("c-food-stand", () => {

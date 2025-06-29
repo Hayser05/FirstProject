@@ -1,4 +1,4 @@
-import { createElement } from "lwc";
+import { createElement } from '@lwc/engine-dom';
 import ProgressBarParentComponent from "c/progressBarParentComponent";
 
 describe("c-progress-bar-parent-component", () => {
